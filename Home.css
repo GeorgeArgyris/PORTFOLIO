@@ -1,0 +1,279 @@
+ 
+  
+ * {
+    box-sizing: border-box;
+}
+
+ .link-container {
+     display: flex;
+     /* Display the items in a row */
+     align-items: center;
+     /* Align items vertically in the center */
+ }
+
+
+ .navbar {
+     width: auto;
+     justify-content: right;
+     padding-right: 100px;
+     padding-top: 10px;
+     display: flex;
+     background: linear-gradient(to right, #B2CDE5, #89B0D9, #6595C9, #4383C6, #3474BE, #195DAB);
+
+ }
+
+ .navbar-brand {
+     font-weight: bold;
+     font-size: 30px;
+     cursor: pointer;
+     margin-left: 100px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: black;
+     display: inline-block;
+     transition: transform 0.3s ease-out;
+ }
+
+ .navbar-brand:hover {
+     transform: scale(1.1);
+     color: black;
+
+ }
+
+ .home-container {
+     width: 100%;
+
+     min-height: 1000px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background: linear-gradient(to right, #B2CDE5, #89B0D9, #6595C9, #4383C6, #3474BE, #195DAB);
+
+ }
+
+ .elements-container {
+     width: 100%;
+     height: 100px;
+     background: linear-gradient(to right, #B2CDE5, #89B0D9, #6595C9, #4383C6, #3474BE, #195DAB);
+
+ }
+
+
+ .navbar-link {
+
+     color: black;
+     text-decoration: none;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 28px;
+     padding: 20px;
+     display: inline-block;
+     transition: transform 0.3s ease-out;
+
+ }
+
+ .navbar-link:hover {
+     transform: scale(1.1);
+     border-radius: 20px;
+ }
+
+ .navbar-hireMe {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 27px;
+     background-color: brown;
+     border-radius: 20px;
+     padding: 10px;
+     text-decoration: none;
+     color: black;
+ }
+
+ .navbar-hireMe:hover {
+     background-color: red;
+ }
+
+
+
+ .text-container {
+     text-align: left;
+     margin-left: 100px;
+     font-size: 35px;
+ }
+
+
+ .name {
+     color: black;
+     font-weight: bold;
+ }
+
+ .profession {
+     color: #C65144;
+     font-weight: bold;
+ }
+
+ .image-container {
+     max-width: auto;
+     margin-right: 300px;
+ }
+
+ .profile-image {
+     width: auto;
+     max-width: 500px;
+     height: auto;
+     border-radius: 50%;
+ }
+
+ .typing-effect {
+     overflow: hidden;
+     white-space: nowrap;
+     border-right: 2px solid #0066cc;
+     /* Adjust color as needed */
+     font-size: 40px;
+     /* Adjust font size as needed */
+     display: inline-block;
+     animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+ }
+
+ @keyframes typing {
+     from {
+         width: 0;
+     }
+
+     to {
+         width: 100%;
+     }
+ }
+
+ @keyframes blink-caret {
+
+     from,
+     to {
+         border-color: transparent;
+     }
+
+     50% {
+         border-color: #0066cc;
+         /* Adjust color as needed */
+     }
+ }
+
+ .Buttons {
+     align-items: center;
+     margin-left: 50px;
+ }
+
+ .resume-button {
+     padding-right: 20px;
+     padding-left: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-decoration: none;
+     color: black;
+     background-color: black;
+     border-radius: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 27px;
+     color: #f0f0f0;
+     margin-left: 100px;
+     transition: all 0.3s ease;
+     display: inline-block;
+ }
+
+
+
+ .hireMe-button {
+     padding-right: 20px;
+     padding-left: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-decoration: none;
+     color: black;
+     background-color: antiquewhite;
+     border-radius: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 27px;
+     transition: all 0.3s ease;
+     display: inline-block;
+
+ }
+
+ .resume-button:hover {
+     transform: scale(1.10);
+     background-color: #333;
+ }
+
+ .hireMe-button:hover {
+     transform: scale(1.10);
+     background-color: #d2b48c;
+ }
+
+
+ /* Media query for screens smaller than 768px (typical mobile phones) */
+ @media (max-width: 768px) {
+     .navbar {
+         padding-right: 20px;
+         /* Adjust padding for smaller screens */
+     }
+
+     @media (max-width: 768px) {
+         .navbar-brand {
+             font-size: 18px;
+             /* Decrease font size for smaller screens */
+         }
+
+         .navbar-link{
+            font-size : 10px;
+         }
+     }
+
+
+     .navbar-brand {
+         margin-left: 20px;
+         /* Adjust margin for smaller screens */
+     }
+
+     .link-container {
+         flex-direction: column;
+         /* Stack links vertically */
+         align-items: flex-start;
+         /* Align links to the start */
+     }
+
+     .navbar-link {
+         font-size: 20px;
+         /* Decrease font size for smaller screens */
+         padding: 10px;
+         /* Adjust padding for smaller screens */
+     }
+
+     .text-container {
+         margin-left: 20px;
+         /* Adjust margin for smaller screens */
+         font-size: 25px;
+         /* Decrease font size for smaller screens */
+     }
+
+     .Buttons {
+         margin-left: 20px;
+         /* Adjust margin for smaller screens */
+     }
+
+     .profile-image {
+         width: 300px;
+         height: 300px;
+     }
+
+     .typing-effect {
+         font-size: 30px;
+         /* Decrease font size for smaller screens */
+     }
+
+     .resume-button,
+     .hireMe-button {
+         font-size: 20px;
+         /* Decrease font size for smaller screens */
+         margin-left: 20px;
+         /* Adjust margin for smaller screens */
+         margin-top: 10px;
+         /* Adjust margin for smaller screens */
+         padding: 8px 16px;
+         /* Adjust padding for smaller screens */
+     }
+ }

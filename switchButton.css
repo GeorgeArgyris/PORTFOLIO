@@ -1,0 +1,68 @@
+.toggle {
+  background-color: #B8ABC6;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  margin-left: 100px;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 500ms;
+  transition: transform 0.3s ease-out;
+
+}
+
+.toggle:hover {
+  transform: scale(1.05);
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms, opacity 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+  color: black;
+  opacity: 0;
+}
+
+.icon--sun {
+  color: yellow;
+  opacity: 1;
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+
+#switch:checked ~ .icon--sun {
+  transform: rotate(360deg);
+  opacity: 0;
+  transition-delay: 200ms;
+}
+
+#switch:not(:checked) + .icon--moon {
+  transform: rotate(0deg);
+  opacity: 0;
+}
+
+#switch:not(:checked) ~ .icon--sun {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+#switch:checked + .icon--moon .toggle {
+  background-color: white; /* Background color when moon is active */
+}
+
+#switch:not(:checked) + .icon--sun .toggle {
+  background-color: grey; /* Background color when sun is active */
+}

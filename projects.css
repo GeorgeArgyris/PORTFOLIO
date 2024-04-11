@@ -1,0 +1,399 @@
+.projects-container {
+    background-color: #D7CEC3;
+    width: 100%;
+    height:auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+      
+}
+
+.project-boxes {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding : 20px;
+}
+
+.project-box {
+    width: 500px;
+    height: 400px;
+    margin: 10px; 
+    border-radius : 25px;
+box-shadow:
+  6.5px 5.3px 3.9px rgba(0, 0, 0, 0.148),
+  52px 42px 31px rgba(0, 0, 0, 0.33)
+;
+
+}
+
+.project-box.Orilina {
+    background: linear-gradient(to right, #459FFF, #2672C3, #0F5196, #074587);
+
+}
+
+.project-box.Palaplast {
+    background: linear-gradient(to right,#94B2CA, #7C98B3, #677588, #637081);
+
+}
+
+.project-box.PalaplastNet {
+    background: linear-gradient(to right, #CEE5F2, #BDD8EA, #ACCBE1, #9CB7CD,#8BA3B8);
+
+}
+
+
+.project-name{
+    border-radius : 10px;
+    padding : 15px;
+    display : flex;
+    justify-content: space-around; 
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.project-name Orilina{
+    background: linear-gradient(to right, #459FFF, #2672C3, #0F5196, #074587);
+ 
+}
+
+.project-name Palaplast{
+    background: linear-gradient(to right, #459FFF, #2672C3, #0F5196, #074587);
+ 
+}
+.project-name PalaplastNet{
+    background: linear-gradient(to right, #CEE5F2, #BDD8EA, #ACCBE1, #9CB7CD,#8BA3B8);
+ 
+}
+
+.project-picture{
+    max-width: 100%; 
+    max-height: 100%; 
+    width: 500px;
+    height: 300px; 
+    border-radius: 25px;
+    display: block; 
+    margin-top:auto ; 
+}
+
+.project-picture.net{
+    max-height:80%;
+    }
+
+.project-overlay {
+        position: relative;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+
+    .slide-show-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border-radius : 20px;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .project-overlay:hover .slide-show-button {
+        display: block;
+    }
+
+    .project-overlay:hover .project-picture {
+    opacity: 0.8; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width : 75% ;
+    height : 75% ;
+    padding: 10px;
+    z-index: 1;
+    background: linear-gradient(to right, #459FFF, #2672C3, #0F5196, #074587);
+    justify-content:space-between;
+    border-radius: 15px; /* Adjust the border-radius as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width : 70% ;
+  height : 85% ;
+  padding: 10px;
+  z-index: 1;
+  background: linear-gradient(to right, #459FFF, #2672C3, #0F5196, #074587);
+  justify-content:space-between;
+  border-radius: 15px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.modal.web {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width : 50% ;
+  height : 85% ;
+  padding: 10px;
+  z-index: 1;
+  background: linear-gradient(to right, #459FFF, #2672C3, #0F5196, #074587);
+  justify-content:space-between;
+  border-radius: 15px; /* Adjust the border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    padding:5px;
+    border-radius:20%;
+}
+
+.close:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 40px; /* Adjust the radius as needed */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #65A8B4, #569FAD, #4595A5, #328A9C, #1E7E92, #104B57, #093239, #02181B);
+        border-radius: 40px; /* Adjust the radius as needed */
+
+}
+
+
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+
+
+.gallery{
+  margin:0;
+  height:100vh;
+  display:grid;
+  place-items:center;
+  background-color:#010101;
+  max-height : 300px;
+}
+
+.project-gallery{
+  position:relative;
+  width:300px;
+  height:200px;
+  transform-style:preserve-3d;
+  animation:rotate 35s linear infinite;
+}
+
+@keyframes rotate{
+  from{
+    transform:perspective(2100px) rotateY(0deg);
+  }
+  
+  to{
+    transform:perspective(2100px00px) rotateY(360deg);
+  }
+}
+
+.project-gallery span{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transform-origin:center;
+  transform-style:preserve-3d;
+  transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.project-gallery span img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.album-container {
+    position: absolute; /* Change from relative to absolute */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+}
+
+.album-container.web {
+  position: absolute; /* Change from relative to absolute */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides1 {
+  display: none;
+}
+
+.mySlides2 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right:11px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  font-size: 20px;
+  padding: 15px;
+  position: absolute;
+  background-color: #ffffff;
+  color:#000000;
+  top: 0;
+  border-radius:50%;
+}
+
+.imageShowing{
+    border-radius : 20px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  font-size:22px;
+  border-radius:20px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  border-radius:20px;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.demo:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}
+
+.demo1 {
+  opacity: 0.6;
+  border-radius:20px;
+}
+
+
+.active,
+.demo1:hover {
+  opacity: 1;
+}
+
+.demo1:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}
+
+.demo2 {
+  opacity: 0.6;
+  border-radius:20px;
+}
+
+
+.active,
+.demo2:hover {
+  opacity: 1;
+}
+
+.demo2:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}

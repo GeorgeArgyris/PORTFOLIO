@@ -1,0 +1,221 @@
+.conclution-container {
+    background: linear-gradient(to right, #272524, #1B1817, #151111 , #120E0E,#0E0A0A);
+    width: 100%;
+    height:auto;
+    background-color: #D7CEC3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.address-container {
+  display: flex;
+  align-items: center;
+  padding : 20px;
+}
+
+.conclution-line {
+  border: 1px double #fff;
+  height: 0;
+  margin: 10px 0;
+  margin-left: 100px;
+}
+
+.conclution-box-line{
+  border: 1px double #fff;
+  height: 0;
+  width : 100%;
+  margin: 10px 0;
+}
+
+.conclution-title {
+  margin-left: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  color : #f0f0f0;
+}
+
+.conclution-box-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color : #f0f0f0;
+}
+
+.conclution-boxes{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding : 20px;
+    padding-top:50px;
+}
+
+conclution-box{
+    width: 400px;
+    height: 400px;
+    margin: 10px; 
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.map-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('location.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+}
+
+.address {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+
+.email-container {
+  display: flex;
+  align-items: center;
+  margin-left : 20px;
+}
+
+.email-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('communication.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+}
+
+.email {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+.outlook-container {
+  display: flex;
+  align-items: center;
+  padding : 20px;
+
+}
+
+.outlook-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('outlook.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+}
+
+.outlook {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  margin-left : 20px;
+
+  
+}
+
+.phone-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('phone-call.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+}
+
+.phone {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+.insta-container {
+  display: flex;
+  align-items: center;
+  margin-left : 20px;
+padding : 20px;
+  
+}
+
+.insta-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('instagram.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+  
+}
+
+.insta {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+.fb-container {
+  display: flex;
+  align-items: center;
+    margin-left : 20px;
+
+  padding : 20px;
+
+}
+
+.fb-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('facebook.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+}
+
+.fb {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+.ln-container {
+  display: flex;
+  align-items: center;
+    margin-left : 20px;
+padding : 20px;
+
+  
+}
+
+.ln-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url('linkedin.png'); /* Add your map icon image path */
+  background-size: cover;
+  margin-right: 10px;
+  color : #f0f0f0;
+}
+
+.ln {
+  font-size: 24px;
+  color : #f0f0f0;
+}
+
+.copyright-container{
+  background:transparent;
+  justify-content:center;
+  align-items:center;
+  text-align:right;
+}
+
+.mytext{
+  color:#f0f0f0;
+  font-size : 20px;
+  margin-right : 40px;
+}

@@ -1,0 +1,98 @@
+.resume-container {
+    background-color: #D7CEC3;
+    width: 100%;
+    height:auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-boxes {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding : 20px;
+}
+
+
+
+.resume-box {
+    width: 500px;
+    height: 700px;
+    margin: 10px; 
+    border-radius : 10px;
+    background: linear-gradient(to right, #F6F5D9, #F7F6CD, #F8F7C1, #F9F8BB);
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+
+  box-shadow:
+  6.5px 5.3px 0px rgba(0, 0, 0, 0.148),
+  52px 42px 0px rgba(0, 0, 0, 0.33)
+;
+    position:relative;
+
+}
+
+.resume-box:hover{
+    transform: scale(1.05); 
+
+}
+
+.vertical-line {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 2px; 
+    background-color: black; 
+    margin-left :20px;
+    margin-top : 30%;
+    height :75%;
+}
+
+.top-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%;
+    background-color: black; 
+    margin-left : 14px;
+    margin-top : 30%;
+}
+
+.bottom-circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%;
+    background-color: black; 
+    margin-left : 14px;
+    margin-bottom : 10px;
+}
+
+.resume-name{
+    margin-top : 10px;
+    font-size:35px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+}
+
+.resume-year{
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+    color:fff;
+    margin-left:45px;
+}
+
+.resume-description{
+    font-size:24px;
+    padding-left : 40px;
+    paddin-right:20px;
+    padding-top:20px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+}

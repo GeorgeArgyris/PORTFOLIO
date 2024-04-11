@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        .confirmation-modal {
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25%;
+            height: 25%;
+            padding: 10px;
+            z-index: 1;
+            background-color: #272524;
+            justify-content: space-between;
+            border-radius: 15px;
+            /* Adjust the border-radius as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Optional: Add a subtle box shadow */
+        }
+
+        .confirmation-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        .confirmation-text2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+        }
+
+        .confirmation-close {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            font-size: 50px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 20%;
+        }
+
+        .confirmation-close:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
+
+        .fas.fa-check-circle {
+            color: green;
+            font-size: 28px;
+        }
+
+        .spinner {
+            --size: 30px;
+            --first-block-clr: #005bba;
+            --second-block-clr: #fed500;
+            --clr: #111;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 85%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+
+        .redirecting-message {
+            text-align: center;
+            color: #f0f0f0;
+            font-size: 20px;
+            margin-right: 70px;
+        }
+
+        .spinner::after,
+        .spinner::before {
+            box-sizing: border-box;
+            position: absolute;
+            content: "";
+            width: var(--size);
+            height: var(--size);
+            top: 50%;
+            animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+            left: 50%;
+            background: var(--first-block-clr);
+        }
+
+        .spinner::after {
+            background: var(--second-block-clr);
+            top: calc(50% - var(--size));
+            left: calc(50% - var(--size));
+            animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+        }
+
+        @keyframes down {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            25% {
+                transform: translateX(100%);
+            }
+
+            50% {
+                transform: translateX(100%) translateY(100%);
+            }
+
+            75% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes up {
+
+            0%,
+            100% {
+                transform: none;
+            }
+
+            25% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-100%) translateY(-100%);
+            }
+
+            75% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="ConfirmationModal" class="confirmation-modal">
+        <span class="confirmation-close">&times;</span>
+        <h2 class="confirmation-text">Thank You!</h2>
+        <p class="confirmation-text2">
+            Your message has been successfully sent.
+            <i class="fas fa-check-circle"></i>
+        </p>
+        <p class="confirmation-text2">
+            Appreciate your interest and I will get back to you as soon as possible.
+        </p>
+        <div class="spinner"></div>
+        <p class="redirecting-message">Redirecting...</p>
+    </div>
+</body>
+<script>
+     document.addEventListener("DOMContentLoaded", function () {
+       
+        setTimeout(function () {
+           
+            window.location.href = "index.html";
+        }, 5000);
+    });
+</script>
+</html>
